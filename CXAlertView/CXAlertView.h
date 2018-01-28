@@ -61,4 +61,5 @@ typedef void(^CXAlertViewHandler)(CXAlertView *alertView);
 - (void)shake;
 // Operation
 - (void)cleanAllPenddingAlert;
+- (void)enableConfirmButton:(BOOL)enable;
 @end

@@ -1178,4 +1178,10 @@ static BOOL __cx_statsu_prefersStatusBarHidden;
     _showButtonLine = showButtonLine;
     [self updateBottomScrollView];
 }
+
+- (void)enableConfirmButton:(BOOL)enable
+{
+    UIButton* confirmButton = [_buttons objectAtIndex:1];
+    confirmButton.enabled = enable;
+}
 @end
